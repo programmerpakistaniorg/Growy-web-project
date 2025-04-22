@@ -1,11 +1,70 @@
+/* Global Styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    background: #f8f9fa;
 }
-header {
-    background: #28a745;
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../assets/images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
     color: white;
-    padding: 50px 20px;
+    padding: 150px 20px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.hero .lead {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+/* User Roles Section */
+.user-roles .card {
+    border: none;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.user-roles .card:hover {
+    transform: translateY(-5px);
+}
+
+/* Services Section */
+.services .btn-primary {
+    background: #28a745;
+    border: none;
+}
+
+.services .btn-primary:hover {
+    background: #218838;
+}
+
+/* Jobs Section */
+.jobs .btn-outline-secondary {
+    margin-bottom: 10px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+    .hero .lead {
+        font-size: 1.2rem;
+    }
+    .hero {
+        padding: 100px 20px;
+    }
 }
