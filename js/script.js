@@ -1,0 +1,1 @@
+console.log("Growy website script loaded.");
